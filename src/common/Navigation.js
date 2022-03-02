@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap'
+import UserInfo from './UserInfo';
 
 const Navigation = () => {
   const padding = {
@@ -16,6 +17,7 @@ const Navigation = () => {
             <Nav.Link href="#" as="span">
               <Link style={padding} to="/">Home</Link>
             </Nav.Link>
+            <UserInfo />
           </Nav>
         </Navbar.Collapse>
       </Navbar>

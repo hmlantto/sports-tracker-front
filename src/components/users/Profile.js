@@ -1,11 +1,17 @@
-import React from 'react';
+import React from 'react'
+import { useParams }   from 'react-router-dom'
+// import userService from '../../services/users'
 
-const Profile = () => {
+const User = () => {
+  const id = useParams().id
+  // const user = await userService.getUser( id )
+  console.log(id)
+
   return (
     <div>
-      user info + settings + statistics
+      Hi!
     </div>
-  );
-};
+  )
+}
 
-export default Profile;
+export default User
