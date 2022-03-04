@@ -29,7 +29,7 @@ const LoginPageContainer = () => {
     <section className="login">
       <LoginForm username={ username } setUsername={ setUsername } password={ password } setPassword={ setPassword } handleLogin={ handleLogin } />
       <div>
-        Not yet logged in? <Link to="/auth/register">Register here!</Link>
+        Not yet registered? <Link to="/auth/register">Register here!</Link>
       </div>
     </section>
   )

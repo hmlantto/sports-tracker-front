@@ -7,14 +7,14 @@ const LoginForm = ( { username, setUsername, password, setPassword, handleLogin 
     <div>
       <h2>Log in to application</h2>
 
-      <Form style={ { maxWidth: '30rem' } } onSubmit={handleLogin}>
+      <Form style={ { maxWidth: '30rem' } } onSubmit={ handleLogin }>
         <Form.Group>
           <Form.Label>username</Form.Label>
           <Form.Control
             type="text"
             name="username"
-            value={username}
-            onChange={({ target }) => setUsername(target.value)}
+            value={ username }
+            onChange={ ( { target } ) => setUsername( target.value ) }
           />
         </Form.Group>
         <Form.Group>
@@ -22,11 +22,11 @@ const LoginForm = ( { username, setUsername, password, setPassword, handleLogin 
           <Form.Control
             type="password"
             name="password"
-            value={password}
-            onChange={({ target }) => setPassword(target.value)}
+            value={ password }
+            onChange={ ( { target } ) => setPassword( target.value ) }
           />
         </Form.Group>
-        <Button variant="primary" type="submit">login</Button>
+        <Button variant="primary" type="submit">Log in</Button>
       </Form>
     </div>
   )
