@@ -27,7 +27,7 @@ const LoginPageContainer = () => {
 
   return(
     <section className="login">
-      <LoginForm username={ username } setUsername={ setUsername } password={ password } setPassword={ setPassword } handleLogin={ handleLogin } />
+      <LoginForm username={ username } setUsername={ setUsername } password={ password } setPassword={ setPassword } handleSubmit={ handleLogin } />
       <div>
         Not yet registered? <Link to="/auth/register">Register here!</Link>
       </div>

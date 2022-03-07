@@ -28,7 +28,7 @@ const RegisterPageContainer = () => {
 
   return(
     <section className="register">
-      <RegisterForm username={ username } setUsername={ setUsername } name={ name } setName={ setName } password={ password } setPassword={ setPassword } handleRegistration={ handleRegistration } />
+      <RegisterForm username={ username } setUsername={ setUsername } name={ name } setName={ setName } password={ password } setPassword={ setPassword } handleSubmit={ handleRegistration } />
       <div>
         Already registered? <Link to="/auth/login">Log in here!</Link>
       </div>

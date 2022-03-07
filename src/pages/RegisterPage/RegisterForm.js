@@ -1,13 +1,13 @@
 import React            from 'react'
 import { Button, Form } from 'react-bootstrap'
 
-const RegisterForm = ( { username, setUsername, name, setName, password, setPassword, handleRegistration } ) => {
+const RegisterForm = ( { username, setUsername, name, setName, password, setPassword, handleSubmit } ) => {
 
   return(
     <div>
       <h2>Register account</h2>
 
-      <Form style={ { maxWidth: '30rem' } } onSubmit={ handleRegistration }>
+      <Form onSubmit={ handleSubmit }>
         <Form.Group>
           <Form.Label>username</Form.Label>
           <Form.Control

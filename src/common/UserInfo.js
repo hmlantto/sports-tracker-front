@@ -20,7 +20,7 @@ const Logout = () => {
     }
   }
 
-  if ( user.data === null ) {
+  if ( !user.data ) {
     return (
       <></>
     )
@@ -28,7 +28,7 @@ const Logout = () => {
 
   return(
     <>
-      <span className="user-info" style={ { verticalAlign: 'bottom' } }>
+      <span className="user-info">
         Logged in as { user.data.username }
         <Button variant="outline-primary" size="sm" className="small-button" type="button" onClick={ handleLogout }>Log out</Button>
       </span>
