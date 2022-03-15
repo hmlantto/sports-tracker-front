@@ -6,9 +6,11 @@ import ProfilePageContainer from './pages/ProfilePage/ProfilePageContainer'
 import RegisterPageContainer from './pages/RegisterPage/RegisterPageContainer'
 import Timeline from './components/users/Timeline'
 import Calendar from './components/users/Calendar'
-import AddWorkout from './components/workouts/AddWorkout'
 import LoginPageContainer from './pages/LoginPage/LoginPageContainer'
 import CategoriesPageContainer from './pages/CategoriesPage/CategoriesPageContainer'
+import WorkoutsPageContainer from './pages/WorkoutsPage/WorkoutsPageContainer'
+import AddWorkoutForm from './pages/WorkoutsPage/AddWorkoutForm'
+import AddCategoryForm from './pages/CategoriesPage/AddCategoryForm'
 
 const App = () => {
   return (
@@ -23,9 +25,11 @@ const App = () => {
             <Route path="/auth/register" element={ <RegisterPageContainer /> } />
             <Route path="/profile" element={ <ProfilePageContainer /> } />
             <Route path="/categories" element={ <CategoriesPageContainer /> } />
+            <Route path="/addcategory" element={ <AddCategoryForm /> } />
+            <Route path="/workouts" element={ <WorkoutsPageContainer /> } />
+            <Route path="/addworkout" element={ <AddWorkoutForm /> } />
             <Route path="/users/:id/calendar" element={ <Calendar /> } />
             <Route path="/users/:id/timeline" element={ <Timeline /> } />
-            <Route path="/users/:id/addworkout" element={ <AddWorkout /> } />
           </Routes>
         </div>
       </BrowserRouter>

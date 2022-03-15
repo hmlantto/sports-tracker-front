@@ -1,8 +1,8 @@
 import axios from 'axios'
 import store from '../store';
-const baseUrl = '/api/categories'
+const baseUrl = '/api/workouts'
 
-const addCategory = async ( data ) => {
+const addWorkout = async ( data ) => {
   const state = store.getState()
   
   const config = {
@@ -13,7 +13,7 @@ const addCategory = async ( data ) => {
   return response.data
 }
 
-const getCategories = async () => {
+const getWorkouts = async () => {
   const state = store.getState()
   
   const config = {
@@ -24,6 +24,13 @@ const getCategories = async () => {
   return response.data
 }
 
-const categoryService = { addCategory, getCategories }
+const getWorkoutTypes = async () => {
+  const url = `${ baseUrl }/types`
+  
+  const response = await axios.get( url )
+  return response.data
+}
 
-export default categoryService
+const workoutService = { addWorkout, getWorkouts, getWorkoutTypes }
+
+export default workoutService

@@ -6,6 +6,6 @@ const register = async ( data ) => {
   return response.data
 }
 
-const authService = { register }
+const userService = { register }
 
-export default authService
+export default userService
